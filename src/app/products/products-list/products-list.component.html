@@ -1,0 +1,29 @@
+<div class="table-container">
+  <h2>Gaseosas en stock</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Producto</th>
+        <th>Stock</th>
+        <th>Precio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products$ | async">
+        <td>
+          {{ product.id }}
+        </td>
+        <td>
+          {{ product.name }}
+        </td>
+        <td>
+          {{ product.stock }}
+        </td>
+        <td>
+          {{ product.price | currency : "ARS" }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

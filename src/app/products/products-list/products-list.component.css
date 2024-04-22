@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.table-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+table {
+    height: 100vh;
+    width: 80%;
+    margin-top: 2rem;
+    text-align: center;
+    border-collapse: collapse;
+
+
+}
+thead{
+    background-color: rgb(128, 128, 233);
+}
+th{
+    font-weight: 600;
+    padding: .5rem;
+}
+tbody{
+    width: 100%;
+}
+
+td {
+    padding: .5rem;
+}
+
+tr:nth-child(even) {
+    background-color: #c5c1c1;
+}
